@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DLL and copy to Windows Temp",
+            "type": "process",
+            "command": "cmd.exe",
+            "args": [
+                "/d", "/c", "${workspaceFolder}/build.cmd"
+            ],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": "$rustc"
+        }
+    ]
+}

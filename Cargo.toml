@@ -1,0 +1,20 @@
+[package]
+name = "test-dll"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "test_dll"
+crate-type = ["cdylib"]
+
+[dependencies]
+windows-sys = { version = "0.61.2", features = [
+    "Win32_Foundation",
+    "Win32_Graphics_Gdi",
+    "Win32_System_Diagnostics_Debug",
+    "Win32_System_SystemServices",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Threading",
+    "Win32_UI_Controls",
+] }
